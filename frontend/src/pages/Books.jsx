@@ -15,7 +15,7 @@ const BookPage = ({ bookId, onBack }) => {
 
 
    // 2. Fetch the specific book from the Flask backend using the passed bookId
-   fetch(`http://localhost:5000/api/books/${bookId}`)
+   fetch(`http://localhost:5000/api/books`)
      .then((response) => {
        if (!response.ok) {
          throw new Error('Failed to fetch the details for this book.');
