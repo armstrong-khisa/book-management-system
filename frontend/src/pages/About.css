@@ -1,0 +1,192 @@
+    /* About Page */
+.about {
+  background: #f8f5f0;
+  min-height: 100vh;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  height: 450px;
+  background: linear-gradient(
+      rgba(40, 20, 10, 0.75),
+      rgba(40, 20, 10, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66")
+      center/cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.about-hero h1 {
+  font-size: 55px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: fadeDown 1s ease;
+}
+
+.about-hero p {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 1.7;
+  animation: fadeUp 1.2s ease;
+}
+
+
+/* Main Content */
+.about-content {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+}
+
+
+/* Headings */
+.about-content h2 {
+  text-align: center;
+  color: #5b3825;
+  font-size: 35px;
+  margin: 50px 0 25px;
+  position: relative;
+}
+
+.about-content h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #c08b5c;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+
+/* Paragraphs */
+.about-content p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #555;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+/* Feature Cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+
+.feature-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border-top: 5px solid #c08b5c;
+}
+
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+
+.feature-card span {
+  font-size: 45px;
+}
+
+
+.feature-card h3 {
+  margin: 20px 0 10px;
+  color: #5b3825;
+}
+
+
+.feature-card p {
+  font-size: 15px;
+}
+
+
+/* Closing Section */
+.closing {
+  background: #5b3825;
+  color: white;
+  margin-top: 70px;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.closing h2 {
+  color: white;
+}
+
+
+.closing p {
+  color: #eee;
+}
+
+
+/* Animations */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+  .about-hero h1{
+    font-size:40px;
+  }
+
+  .about-hero p{
+    font-size:16px;
+  }
+
+
+  .about-content{
+    padding:20px;
+  }
+
+
+  .about-content h2{
+    font-size:28px;
+  }
+
+}

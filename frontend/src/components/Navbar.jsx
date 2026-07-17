@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -61,5 +62,38 @@ const Navbar = () => {
     </header>
   )
 }
+=======
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
-export default Navbar
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        📚 Book Haven
+      </div>
+
+      <ul className="nav-links">
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/about">About</NavLink>
+        </li>
+>>>>>>> feat: enhance Navbar and About page with styling and content updates
+
+        <li>
+          <NavLink to="/books">Books</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/admin">Admin</NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;

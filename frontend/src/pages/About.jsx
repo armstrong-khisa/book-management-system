@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
+import "./About.css";
 
 const About = () => {
   return (
+<<<<<<< HEAD
     <section className="page-section about-page min-h-[calc(100vh-69px)] bg-neutral-950 px-6 py-20 text-stone-200 antialiased flex flex-col justify-center">
       <div className="container mx-auto max-w-7xl">
         
@@ -52,5 +54,84 @@ const About = () => {
     </section>
   )
 }
+=======
+    <div className="about">
+      {/* Hero Section */}
+      <section className="about-hero">
+        <h1>About Our Bookstore</h1>
+        <p>
+          Where every book opens the door to new adventures, fresh ideas, and
+          endless inspiration.
+        </p>
+      </section>
+>>>>>>> feat: enhance Navbar and About page with styling and content updates
 
-export default About
+      {/* About Content */}
+      <section className="about-content">
+        <h2>Who We Are</h2>
+
+        <p>
+          Welcome to our bookstore! We are passionate about connecting readers
+          with books that inspire, educate, and entertain. Our collection is
+          carefully selected to include bestselling novels, timeless classics,
+          children's books, educational resources, and much more.
+        </p>
+
+        <p>
+          We believe that reading has the power to change lives. Whether you're
+          searching for your next favorite novel or looking to expand your
+          knowledge, we're here to make your book-buying experience enjoyable
+          and convenient.
+        </p>
+
+        <h2>Our Mission</h2>
+
+        <p>
+          Our mission is to make quality books accessible to everyone while
+          providing excellent customer service and a seamless shopping
+          experience. We want every customer to leave with a book they'll love.
+        </p>
+
+        <h2>Why Choose Us?</h2>
+
+        <div className="features">
+          <div className="feature-card">
+            <span>📚</span>
+            <h3>Wide Selection</h3>
+            <p>Discover books from every genre and category.</p>
+          </div>
+
+          <div className="feature-card">
+            <span>💰</span>
+            <h3>Affordable Prices</h3>
+            <p>Great books at prices that fit every budget.</p>
+          </div>
+
+          <div className="feature-card">
+            <span>🚚</span>
+            <h3>Fast Delivery</h3>
+            <p>Quick and secure delivery to your doorstep.</p>
+          </div>
+
+          <div className="feature-card">
+            <span>❤️</span>
+            <h3>Passion for Reading</h3>
+            <p>Helping readers discover books they'll never forget.</p>
+          </div>
+        </div>
+
+        <div className="closing">
+          <h2>Join Our Reading Community</h2>
+
+          <p>
+            Thank you for choosing our bookstore. Whether you're a lifelong
+            reader or just beginning your reading journey, we're excited to help
+            you discover your next favorite book.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
