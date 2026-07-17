@@ -1,23 +1,25 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import {Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Books from './pages/Books'
-import Admin from './pages/Admin'
+import AdminDashbord from './pages/AdminDashbord'
 
 const App = () => {
   return (
-    <div>
+    <div className="app-shell">
       <Navbar />
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/books" element={<Books />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin" element={<AdminDashbord />} />
         </Routes>
+      </main>
     </div>
-  ) 
+  )
 }
 
-export default  App
+export default App
