@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Books from './pages/Books'
 import AdminDashbord from './pages/AdminDashbord'
+import Auth from './pages/Auth'
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/books" element={<Books />} />
-          <Route path="/admin" element={<AdminDashbord />} />
+          <Route path="/admin" element={<Auth/>} />
         </Routes>
       </main>
     </div>
