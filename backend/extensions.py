@@ -1,7 +1,0 @@
-from flask_sqlalchemy import SQLAlchemy
-
-# Create a SQLAlchemy instance
-db = SQLAlchemy()
-
-import models.book
-
